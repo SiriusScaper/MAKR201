@@ -5,7 +5,9 @@ Module 3
 Assignment 1
 */
 
-// Create a boolean variable to represent a light being on or off. Use an if statement to check this variable. If it is on, print “It’s bright in here!”
+
+
+// 1. Create a boolean variable to represent a light being on or off. Use an if statement to check this variable. If it is on, print “It’s bright in here!”
 
 let lightsOn = true
 
@@ -13,7 +15,9 @@ if lightsOn {
   print("It's bright in here!", "\n")
 }
 
-// Use a switch statement to check if a number is positive, zero, or negative. Print “positive”, “zero”, or “negative” accordingly.
+
+
+// 2. Use a switch statement to check if a number is positive, zero, or negative. Print “positive”, “zero”, or “negative” accordingly.
 
 let number = Int.random(in: -1...1)
 print(number)
@@ -28,7 +32,8 @@ switch number {
 }
 
 
-// Write an if statement that checks if a given string is longer than 8 characters. If it is, print “Password length met”. If not, print “Password is not long enough”. (hint: Strings have a "count" property, just like arrays)
+
+// 3. Write an if statement that checks if a given string is longer than 8 characters. If it is, print “Password length met”. If not, print “Password is not long enough”. (hint: Strings have a "count" property, just like arrays)
 
 let givenString = "Longer than 8 characters?"
 
@@ -38,7 +43,9 @@ if (givenString.count < 8)  {
   print("Password length met", "\n")
 }
 
-// Write an if statement that checks to see if an array of grocery items has more than 3 elements. If it does, remove the last one. If it doesn’t, append another element on.
+
+
+// 4. Write an if statement that checks to see if an array of grocery items has more than 3 elements. If it does, remove the last one. If it doesn’t, append another element on.
 
 var groceries = ["Apples", "Oranges"]
 
@@ -50,26 +57,9 @@ if (groceries.count < 3) {
 
 print(groceries, "\n")
 
-// Write a switch statement that checks an integer from 1 to 7. Have it print the corresponding day of the week. (Ex. “1” -> “Sunday”, “2” -> “Monday”, etc.)
 
 
-// Failed attempt
-// So easy and concise in javascript, but I could not think of a way to cut down on the amount of code for swift.
-/*
-let integer = Int.random(in: 1...7)
-
-let daysOfWeek: [Int: String] = [1:"Monday", 2: "Tuesday", 3: "Wednesday", 4: "Thursday", 5: "Friday", 6: "Saturday", 7: "Sunday"]
-
-print(daysOfWeek.contains(1))
-
-switch integer {
-  case  _ where daysOfWeek[integer] != nil :
-  print(daysOfWeek[integer])
-
-  default:
-  print("Invalid integer")
-}
-*/
+// 5. Write a switch statement that checks an integer from 1 to 7. Have it print the corresponding day of the week. (Ex. “1” -> “Sunday”, “2” -> “Monday”, etc.)
 
 let randomNum = Int.random(in: 1...7)
 
@@ -96,7 +86,27 @@ switch randomNum {
   print("Sunday", "\n")
 }
 
-// Check to see if an array of integers contains the number 4. If it does, set a variable “containsFour” equal to true. If it doesn’t set “containsFour” equal to false.
+                                                  // Failed attempt
+                                                  // So easy and concise in javascript, but I could not think of a way to cut down on the amount of code for swift.
+                                                  /*
+                                                  let integer = Int.random(in: 1...7)
+
+                                                  let daysOfWeek: [Int: String] = [1:"Monday", 2: "Tuesday", 3: "Wednesday", 4: "Thursday", 5: "Friday", 6: "Saturday", 7: "Sunday"]
+
+                                                  print(daysOfWeek.contains(1))
+
+                                                  switch integer {
+                                                    case  _ where daysOfWeek[integer] != nil :
+                                                    print(daysOfWeek[integer])
+
+                                                    default:
+                                                    print("Invalid integer")
+                                                  }
+                                                  */
+
+
+
+// 6. Check to see if an array of integers contains the number 4. If it does, set a variable “containsFour” equal to true. If it doesn’t set “containsFour” equal to false.
 
 let arrOfNums: [Int] = [1, 2, 3, 5]
 var containsFour: Bool
@@ -108,7 +118,8 @@ if arrOfNums.contains(4) {
 }; print(containsFour, "\n")
 
 
-// Create a variable “needsFuel” as a Boolean. Create another variable, “fuelLevel” to be an integer between 1 and 10. Use a ternary operator to check if fuelLevel is above 3. If it is, set needsFuel to false. If it isn’t, set needsFuel to true.
+
+// 7. Create a variable “needsFuel” as a Boolean. Create another variable, “fuelLevel” to be an integer between 1 and 10. Use a ternary operator to check if fuelLevel is above 3. If it is, set needsFuel to false. If it isn’t, set needsFuel to true.
 
 var needsFuel:Bool
 
@@ -119,7 +130,9 @@ needsFuel = fuelLevel > 3 ? true : false // Setting the variable needsFuel to th
 
 print(needsFuel, "\n") // Print the result to see if needsFuel is true or falce
 
-// Create a string variable called “password” and a boolean variable called “loginPressed”. Check to see if password is equal to “abc123” and if loginPressed is equal to true. If so, then print “You are logged in”. If loginPressed is true, but the password doesn’t match, print “Incorrect password”. Otherwise, print “waiting for the user”.
+
+
+// 8. Create a string variable called “password” and a boolean variable called “loginPressed”. Check to see if password is equal to “abc123” and if loginPressed is equal to true. If so, then print “You are logged in”. If loginPressed is true, but the password doesn’t match, print “Incorrect password”. Otherwise, print “waiting for the user”.
 
 var password = "abc123"
 var loginPressed: Bool = true
@@ -132,7 +145,9 @@ if loginPressed == true && password == "abc123" {
   print("Waiting for user", "\n")
 }
 
-// Create a string variable that is only a single letter. Check to see if it is a vowel or consonant and print “This is a vowel” or “this is a consonant” accordingly. (hint: in a switcfalseh statement you can check for multiple cases by separating them with a comma)
+
+
+// 9. Create a string variable that is only a single letter. Check to see if it is a vowel or consonant and print “This is a vowel” or “this is a consonant” accordingly. (hint: in a switcfalseh statement you can check for multiple cases by separating them with a comma)
 
 let letter: String? = "e"
 
@@ -145,7 +160,9 @@ switch letter {
     print("This is a consonant", "\n")
 }
 
-// Create two integer variables and one boolean variable called “numbersEqual”. Check if the integers are equal, and if so set numbersEqual to true. If not, set numbersEqual to false.
+
+
+// 10. Create two integer variables and one boolean variable called “numbersEqual”. Check if the integers are equal, and if so set numbersEqual to true. If not, set numbersEqual to false.
 
 var integer1 = Int.random(in: 1...5)
 var integer2 = Int.random(in: 1...5)
