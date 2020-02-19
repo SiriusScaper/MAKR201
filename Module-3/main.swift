@@ -1,3 +1,10 @@
+/* 
+Ryan Uselmann
+MAKR 201
+Module 3
+Assignment 1
+*/
+
 // Create a boolean variable to represent a light being on or off. Use an if statement to check this variable. If it is on, print “It’s bright in here!”
 
 let lightsOn = true
