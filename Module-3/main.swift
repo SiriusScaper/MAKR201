@@ -98,12 +98,22 @@ if arrOfNums.contains(4) {
 } 
 
 
-// Create a variable “needsFuel” as a Boolean. Create another variable, “fuelLevel” to be an integer between 1 and 10. Use a ternary operator to check if fuelLevel is above 3. If it is, set needsFuel to false. If it isn’t, set needsFuel to true.sOfWeek
+// Create a variable “needsFuel” as a Boolean. Create another variable, “fuelLevel” to be an integer between 1 and 10. Use a ternary operator to check if fuelLevel is above 3. If it is, set needsFuel to false. If it isn’t, set needsFuel to true.
 
+var needsFuel:Bool
 
+var fuelLevel = Int.random(in: 1...10) // Generates a random integer between 1 and 10
+print(fuelLevel) // Printing the integer to double check the logic works
 
+needsFuel = fuelLevel > 3 ? true : false // Setting the variable needsFuel to the value of the ternary operator after it evaluates, which is true or false.
+
+print(needsFuel) // Print the result to see if needsFuel is true or falce
 
 // Create a string variable called “password” and a boolean variable called “loginPressed”. Check to see if password is equal to “abc123” and if loginPressed is equal to true. If so, then print “You are logged in”. If loginPressed is true, but the password doesn’t match, print “Incorrect password”. Otherwise, print “waiting for the user”.
+
+let password: String = abc123
+
+let loginPressed: Bool
 
 
 
