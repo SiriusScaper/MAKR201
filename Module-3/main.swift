@@ -149,7 +149,7 @@ if loginPressed == true && password == "abc123" {
 
 // 9. Create a string variable that is only a single letter. Check to see if it is a vowel or consonant and print “This is a vowel” or “this is a consonant” accordingly. (hint: in a switcfalseh statement you can check for multiple cases by separating them with a comma)
 
-let letter: String? = "e"
+let letter: String? = "c"
 
 switch letter {
   case "a", "e", "i", "o", "u":
