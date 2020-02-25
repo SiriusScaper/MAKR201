@@ -2,7 +2,7 @@
 Ryan Uselmann
 MAKR 201
 Module 4
-Assignment 1
+Assignment 
 */
 
 
@@ -62,18 +62,25 @@ for i in numbers {
   sum += i
 }
 
-print(sum)
+print(sum,"\n")
 
 // 4. Create a for loop that loops over an array of names. If the name starts with an “a” or a “j”, add it to another array called “ajNames”. Print the ajNames array when finsished. Use the following array of names:
 
 let names = ["alex", "brad", "jody", "sara", "juan", "mia", "andrey", "michelle", "sasha"]
+var ajNames = [String]()
 
-for i in names {
-  if (i.first == "a" || i.first == "j") {
-    var ajNames[string] = i.append
-  }
+for string in names where string.first == "a" || string.first == "j" {
+    ajNames.append(string)
 }
-
+    print(ajNames,"\n")
 // 5. Use a loop to add all of the letters in this array into one string. Print the result.
 
-//let concatenate = [“co”, “nc”, “at”, “en”, “at”, “ion”]
+let concatenate = ["co", "nc", "at", "en", "at", "ion"]
+
+var i:Int = 0
+
+while i < 1 {
+  let word = concatenate.joined(separator:"")
+  i+=1
+  print(word)
+}
